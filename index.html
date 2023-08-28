@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+    <title>JOB APPLICATION</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="">
+        <header>
+            <h1 id="title">
+                JOB APPLICATION   
+            </h1>
+            <p id="description">
+                Become part of our team
+            </p>
+        </header>
+        
+        <main>
+            <form id="survey-form">
+                <fieldset>
+                    <h3>Personal Information</h3>
+                    <label id="name-label" for="name"> Name <input id="name" type="text" placeholder = "applicant's name" required/>  </label>
+                    <label id="surname-label" for="surname"> Surname <input id="surname"type="text"  placeholder = "applicant's surname" required/>  </label>
+                    <label  id="age-label" for="age"> Age <input id="age" type="number" min="18" max="60" placeholder = "applicant's age" required/>  </label>
+                </fieldset>
+                <fieldset>
+                    <h3>Contact Information</h3>
+                    <label id="email-label" for="email"> Email <input id="email" type="email"  placeholder = "applicant's email" required/>  </label>
+                    <label id="tel-label" for="tel"> Phone <input id="tel" type="tel"  placeholder = "applicant's phone" required/>  </label>
+                </fieldset>
+                <fieldset>
+                    <h3>Job Details</h3>
+                    <h4>Role</h4>
+                    <select id="job-type">
+                        <option>
+                            Front-end Developer
+                        </option>
+                        <option>
+                            Back-end Developer
+                        </option>
+                        <option>
+                            Full-stack Developer
+                        </option>
+                    </select>
+                    <h4>Contract Type</h4>
+                    <input type="radio" value="full-time" name="contract-type" > Full Time
+                    <input type="radio" value="part-time" name="contract-type" > Part Time
+                </fieldset>
+
+                <fieldset>
+                    <h3>Tell us about yourself</h3>
+                    <textarea rows="5" cols="50"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <input type="checkbox" value="data-treatment" required> I agree to the treatment of my personal data
+                    <br>
+                    <input type="checkbox" value="term-and-conditions" required> I accept the terms and conditions
+                </fieldset>
+                <input id="submit" type="submit" value="Submit Application">
+            </form>
+        </main>
+    
+        <footer>
+            Created by Russo Alessio. No Copyright. 
+        </footer>
+    </div>
+
+</body>
+
+
+</html>
